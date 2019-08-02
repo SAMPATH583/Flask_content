@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Data</title>
+	<style type="text/css">
+		body{
+			font-family: cursive;
+			background-color:#c2fcff;
+		}
+		form{
+			text-align: center;
+		}
+		div{
+			background-color: #8ce8ff;
+			width: 40%;
+			margin-right: 25%;
+			margin-left:25%;
+			margin-top:10%;
+			margin-bottom:30%;
+			padding-left: 2%;
+			border-radius: 2%;
+			box-shadow: 5px 5px 5px 5px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<form action="" method = "post">
+		Name : <input type="text" name="Name" value="{{register.Name}}"><br><br>
+		Surname : <input type="text" name="Surname" value="{{register.Surname}}"><br><br>
+		Register number : <input type="text" name="Reg_no" value="{{register.Reg_no}}"><br><br>
+		Mobile number : <input type="text" name="Mobile_no" value="{{register.Mobile_no}}"><br><br>
+		Branch : <input type="text" name="Branch" value="{{register.Branch}}"><br><br>
+		<input type="submit" name="delete">
+	</form>
+</div>
+</body>
+</html>

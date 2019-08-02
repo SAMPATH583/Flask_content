@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<style type="text/css">
+	h1{
+		color: white;
+		font-family: cursive;
+	}
+	h2{
+		color: white;
+		font-family: cursive;
+	}
+	body{
+		background-color: black;
+	}
+	</style>
+</head>
+<body>
+{% block content %}
+{%for d in dict:%}
+<h1>Details</h1>
+<h2>Name : {{d.name}}</h2>
+<h2>Organisation : {{d.org}}</h2>
+<h2>Date of birth : {{d.dob}} </h2>
+{% endfor %}
+{% endblock content %}
+</body>
+</html>
